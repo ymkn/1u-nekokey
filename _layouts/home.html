@@ -1,0 +1,27 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<h3 class="archive__subtitle">News</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign news_entries_layout = page.news_entries_layout | default: 'list' %}
+<div class="entries-{{ news_entries_layout }}">
+  {% include posts-category.html taxonomy=page.news_taxonomy type=news_entries_layout %}
+</div>
+
+<h3 class="archive__subtitle">Products</h3>
+
+{% assign products_entries_layout = page.products_entries_layout | default: 'list' %}
+<div class="entries-{{ products_entries_layout }}">
+  {% include posts-category.html taxonomy=page.products_taxonomy type=products_entries_layout %}
+</div>
+
+{% include paginator.html %}

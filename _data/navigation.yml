@@ -1,0 +1,5 @@
+main:
+  - title: "News"
+    url: /news/
+  - title: "Products"
+    url: /products/
