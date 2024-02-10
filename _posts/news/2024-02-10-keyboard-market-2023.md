@@ -12,6 +12,8 @@ show_date: true
 - [入場チケット購入](https://t.livepocket.jp/e/gbmvf)
 - [キーケット公式サイト](https://keeb-market.jp/)
 
+## お品書き
+
 ![キーケットお品書き]({{ "/assets/images/events/keyboard-market-2023/keyket-list.png" | relative_url }})
 
 頒布予定のキーボードの詳細は下記をご覧下さい。
@@ -19,5 +21,14 @@ show_date: true
 - [KeeBar S]({{ "/products/keebar_s/" | relative_url }})
 - [YM60JIS]({{ "/products/ym60jis/" | relative_url }})
 - [PinKey]({{ "/products/pinkey/" | relative_url }})
+
+## お支払方法
+
+現金のほか、[Square決済](https://squareup.com/jp/ja)による各種クレジットカード、一部電子マネー決済に対応しています。
+
+![支払方法]({{ "/assets/images/events/keyboard-market-2023/payment.png" | relative_url }})
+
+- 機材状況によっては現金のみとなる可能性がありますので、念のため現金もご用意ください
+- 現金の場合はなるべくお釣りが出ないようにご協力いただけると助かります
 
 よろしくお願いします！
