@@ -1,0 +1,61 @@
+---
+layout: single
+title: "キーボードマーケット出展情報"
+category: news
+
+show_date: true
+---
+
+2024/3/2開催の[キーボードマーケットトーキョー（キーケット）](https://keeb-market.jp/)にスペースB-2、「1U猫キー屋」で出展します！
+
+![キーケットサークル配置図]({{ "/assets/images/events/keyboard-market-2023/keyket_map.png" | relative_url }})
+
+## お品書き
+
+![キーケットお品書き]({{ "/assets/images/events/keyboard-market-2023/keyket_list.png" | relative_url }})
+
+### [KeeBar S]({{ "/products/keebar_s/" | relative_url }})
+
+新商品の横長キーボードのKeeBar S（きーばー えす）です。数字行なしのスリムな外観と、数字キーへのアクセス性を両立したいいとこどりキーボードです。旧バージョンに比べてスペースバーの分割が素直になったので、一般的なキーキャップセットで揃えやすくなりました。
+
+3Dプリント製ケース付きのフルキットと、お求めやすいケース無しキットを頒布します！　別途部品の購入と、組み立てが必要です。
+
+旧バージョンのプロトタイプ版も放出します。組立済ですぐ使える、フォーム2枚、アクリルプレート2枚、3Dプリント製ケース付きの超豪華仕様です。
+
+![KeeBarSチラシ]({{ "/assets/images/events/keyboard-market-2023/keebar_s_leaflet.png" | relative_url }})
+
+### [YM60JIS]({{ "/products/ym60jis/" | relative_url }})
+
+![YM60JISチラシ]({{ "/assets/images/events/keyboard-market-2023/ym60jis_leaflet.png" | relative_url }})
+
+60%サイズの日本語配列キーボード基板YM60JIS（わいえむろくじゅう じぇーあいえす）です。市販されている自作キーボード基板はほぼ英語配列なので、日本語配列は大変貴重かと思います。市販の60%サイズのケースと互換性があるので、色々なケースと組み合わせカスタマイズが楽しめます。
+
+基板とスイッチプレートのみ。別途部品の購入と、組み立てが必要です。
+
+### [PinKey]({{ "/products/pinkey/" | relative_url }})
+
+圧縮60%サイズのキーボードPinKey（ぴんきー）です。右手小指部分のキーを2列省略して、EnterキーやBackspaceキーへの運指を効率化しています。代わりに右手外側に4キー追加していますので、頻繁に使う記号を割り当てるなど活用できます。
+
+基板とスイッチプレート、ボトムプレートのみ。v1.0とv1.1があります。別途部品の購入と、組み立てが必要です。
+
+![PinKeyチラシ]({{ "/assets/images/events/keyboard-market-2023/pinkey_leaflet.png" | relative_url }})
+
+## お支払方法
+
+現金のほか、[Square決済](https://squareup.com/jp/ja)による各種クレジットカード、一部電子マネー決済に対応しています。
+
+![支払方法]({{ "/assets/images/events/keyboard-market-2023/payment.png" | relative_url }})
+
+- 機材状況によっては現金のみとなる可能性がありますので、念のため現金もご用意ください
+- 現金の場合はなるべくお釣りが出ないようにご協力いただけると助かります
+
+よろしくお願いします！
+
+[入場チケット (1,000円) 販売はこちら](https://t.livepocket.jp/e/gbmvf)
+
+## 注意事項
+
+- 完成品ではありません。はんだ付けを含む、組み立てが必要です（KeeBar プロトタイプを除く）。
+- ご自分で追加の部品を用意いただく必要があります。各キーボードのビルドガイドを熟読ください。
+- 原則として購入者ご都合による返品・返金には応じられません。
+- 本頒布物固有でない一般のご質問 (例: はんだ付けの方法 等) は対応致しかねます。
