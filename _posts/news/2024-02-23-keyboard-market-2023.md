@@ -40,6 +40,26 @@ show_date: true
 
 ![PinKeyチラシ]({{ "/assets/images/events/keyboard-market-2023/pinkey_leaflet.png" | relative_url }})
 
+### 追加部品セット（オプション販売）
+
+ご自身で準備いただく部品の一部（マイコン、ダイオード、スイッチソケット等）をキット本体ご購入者さまに限りオプションで販売いたします。在庫は若干数。
+
+※本追加部品セットを購入しても、スタビライザーとキースイッチ、キーキャップはご自身で用意が必要です。
+
+![部品セット]({{ "/assets/images/events/keyboard-market-2023/parts.jpg" | relative_url }})
+
+- KeeBar（基板・プレートのみ）用追加部品セット **¥2,000**
+  - Waveshare RP2040-Zero x1
+  - Gateron製 MX用スイッチソケット x1 (SW54干渉回避用)
+  - Kailh製 MX用スイッチソケット x64
+  - ダイオード x62
+- PinKey用追加部品セット **¥2000**
+  - RP2040-Zero互換マイコン x1
+  - MX用スイッチソケット x65
+  - ダイオード x65
+- YM60JIS用追加部品セット **¥1000**
+  - MX用スイッチソケット x70
+
 ## お支払方法
 
 現金のほか、[Square決済](https://squareup.com/jp/ja)による各種クレジットカード、一部電子マネー決済に対応しています。
