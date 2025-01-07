@@ -10,5 +10,14 @@ $sans-serif : "Barlow", "Zen Kaku Gothic New", sans-serif;
 $background-color : #ead6bb;
 $right-sidebar-width : 200px;
 
+.feature__item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h2.archive__item-title {
+  font-size: 1em;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
