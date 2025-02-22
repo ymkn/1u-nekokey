@@ -4,11 +4,27 @@
 
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap');
-$sans-serif : "Barlow", "Zen Kaku Gothic New", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+$sans-serif : "Barlow", "Noto Sans JP", sans-serif;
+
+$type-size-1 : 1.5em !default;  // ~31.248px
+$type-size-2 : 1.25em !default;  // ~25.008px
+$type-size-3 : 1em !default;   // ~20px
+$type-size-4 : 0.80em !default;      // ~16px
+$type-size-5 : 0.75em !default;   // ~12px
+$type-size-6 : 0.6875em !default; // ~11px
+$type-size-7 : 0.625em !default;  // ~10px
 
 $background-color : #ead6bb;
 $right-sidebar-width : 200px;
+
+.page__content p, .page__content ul, .page__content ol, .page__content dl, .page__content blockquote {
+  font-size: 0.8em !important;
+}
+
+h2.archive__item-title {
+  margin-top: 1em;
+}
 
 .feature__item img {
   max-width: 100%;
