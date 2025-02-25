@@ -14,6 +14,19 @@ show_date: true
 
 新作の[Henge40]({{ "/products/henge40/" | relative_url }})、[YM60JIS]({{ "/products/ym60jis/" | relative_url }})のはんだ済み版と標準版、[YM60A]({{ "/products/ym60a/" | relative_url }})を持っていきます！
 
+当日販売予定数はこちら（予告なく変更されることがあります）。
+
+|品目|個数|
+|---|---|
+|Henge40 Hengeケース|9個 (B品含む、割引あり)|
+|Henge40 Flatケース 黒|3個|
+|Henge40 Flatケース 金|3個|
+|YM60JIS はんだ不要版|5個|
+|YM60JIS 通常版|5個|
+|YM60A|5個|
+
+別途BOOTH通販用に若干数在庫確保済みです。当日売れ残り分はBOOTHに足されます。
+
 ![お品書き]({{ "/assets/images/events/keyboard-market-2025/price-list.jpg" | relative_url }})
 
 ## お支払方法
