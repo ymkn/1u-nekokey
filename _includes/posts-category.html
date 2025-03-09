@@ -1,0 +1,6 @@
+{%- assign limit_value = include.limit | default: 5 -%}
+{%- for post in site.categories[include.taxonomy] limit: limit_value -%}
+  {%- unless post.hidden -%}
+    {% include archive-single.html %}
+  {%- endunless -%}
+{%- endfor -%}

@@ -14,14 +14,14 @@ layout: archive
 
 {% assign news_entries_layout = page.news_entries_layout | default: 'list' %}
 <div class="entries-{{ news_entries_layout }}">
-  {% include posts-category.html taxonomy=page.news_taxonomy type=news_entries_layout %}
+  {% include posts-category.html taxonomy=page.news_taxonomy type=news_entries_layout limit=1 %}
 </div>
 
 <h3 class="archive__subtitle">Products</h3>
 
 {% assign products_entries_layout = page.products_entries_layout | default: 'list' %}
 <div class="entries-{{ products_entries_layout }}">
-  {% include posts-category.html taxonomy=page.products_taxonomy type=products_entries_layout %}
+  {% include posts-category.html taxonomy=page.products_taxonomy type=products_entries_layout limit=20 %}
 </div>
 
 {% include paginator.html %}
