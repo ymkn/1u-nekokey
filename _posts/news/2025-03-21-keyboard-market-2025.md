@@ -18,11 +18,11 @@ show_date: true
 
 |品目|個数|
 |---|---|
-|Henge40 Hengeケース|9個 (B品含む、割引あり)|
+|Henge40 Hengeケース|8個 (B品含む、割引あり)|
 |Henge40 Flatケース 黒|3個|
 |Henge40 Flatケース 金|3個|
-|YM60JIS はんだ不要版|5個|
-|YM60JIS 通常版|5個|
+|YM60JIS はんだ不要版|4個|
+|YM60JIS 通常版|3個|
 |YM60A|5個|
 
 別途BOOTH通販用に若干数在庫確保済みです。当日売れ残り分はBOOTHに足されます。
