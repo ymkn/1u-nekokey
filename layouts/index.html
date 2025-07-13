@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="home-content">
+    <!-- 最新ニュース3件 -->
+    <section class="latest-news">
+        <h2>最新ニュース</h2>
+        <ul class="news-list">
+            {{ range first 3 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+            <li class="news-item">
+                <a href="{{ .RelPermalink }}">
+                    <span class="news-date">{{ .Date.Format "2006.01.02" }}</span>
+                    <span class="news-title">{{ .Title }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+        <div class="news-more">
+            <a href="./news/" class="more-link">すべてのニュースを見る →</a>
+        </div>
+    </section>
+
+    <!-- 製品一覧 -->
+    <section class="products-section">
+        <h2>製品一覧</h2>
+        <div class="products-grid">
+            {{ range (where .Site.RegularPages "Section" "products").ByDate.Reverse }}
+            <div class="product-card">
+                <a href="{{ .RelPermalink }}">
+                    {{ if .Params.image }}
+                    <div class="product-image">
+                        <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+                    </div>
+                    {{ end }}
+                    <div class="product-content">
+                        <h3 class="product-title">{{ .Title }}</h3>
+                        {{ if .Params.price }}
+                        <p class="product-price">{{ .Params.price }}</p>
+                        {{ end }}
+                        {{ if .Description }}
+                        <p class="product-summary">{{ .Description }}</p>
+                        {{ end }}
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+</div>
+{{ end }}
