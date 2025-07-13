@@ -1,0 +1,50 @@
+{{ $layout := .Get "layout" | default "default" }}
+{{ $gallery := .Page.Params.gallery }}
+
+{{ if $gallery }}
+<!-- PhotoSwipe CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe.css">
+
+<div class="gallery gallery-{{ $layout }}" id="gallery-{{ $layout }}">
+  {{ range $index, $item := $gallery }}
+    <div class="gallery-item">
+      <a href="{{ $item.url }}" 
+         data-pswp-width="1200" 
+         data-pswp-height="800"
+         target="_blank">
+        <img src="{{ $item.image_path }}" alt="製品画像 {{ add $index 1 }}" loading="lazy" class="gallery-thumb">
+      </a>
+    </div>
+  {{ end }}
+</div>
+
+<!-- PhotoSwipe JS -->
+<script type="module">
+import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe-lightbox.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery-{{ $layout }}',
+  children: 'a',
+  pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe.esm.js'),
+  
+  // UI設定
+  closeTitle: '閉じる',
+  zoomTitle: 'ズーム',
+  arrowPrevTitle: '前の画像',
+  arrowNextTitle: '次の画像',
+  
+  // アニメーション設定
+  showAnimationDuration: 300,
+  hideAnimationDuration: 300,
+  
+  // その他の設定
+  spacing: 0.1,
+  allowPanToNext: true,
+  wheelToZoom: true
+});
+
+lightbox.init();
+</script>
+{{ else }}
+<!-- ギャラリーデータが見つかりません -->
+{{ end }}

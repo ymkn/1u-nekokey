@@ -1,0 +1,77 @@
+baseURL = 'https://ymkn.github.io/1u-nekokey/'
+languageCode = 'ja'
+title = '1U猫キー屋'
+theme = 'PaperMod'
+
+# PaperMod theme settings
+[params]
+  env = "production"
+  description = "1Uキーボード専門店 - 高品質なカスタムキーボードを提供"
+  author = "1U猫キー屋"
+  defaultTheme = "light"
+  disableThemeToggle = true
+  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowWordCount = false
+  hideauthor = true
+  ShowRssButtonInSectionTermList = false
+  UseHugoToc = true
+  disableAnchoredHeadings = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+
+  [params.assets]
+    favicon = "/1u-nekokey/images/logo/logo.png"
+
+  [params.label]
+    text = "1U猫キー屋"
+    icon = "/1u-nekokey/images/logo/logo.png"
+    iconHeight = 35
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ymkn"
+
+# Menu settings
+[menu]
+  [[menu.main]]
+    identifier = "news"
+    name = "News"
+    url = "/news/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "products"
+    name = "Products"
+    url = "/products/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "support"
+    name = "Support"
+    url = "/support/"
+    weight = 30
+
+# SEO and markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = false
+    style = "github"
+
+# Outputs for search and RSS
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

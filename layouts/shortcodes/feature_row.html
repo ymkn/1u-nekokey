@@ -1,0 +1,34 @@
+{{ $feature_row := .Page.Params.feature_row }}
+
+{{ if $feature_row }}
+<div class="feature-row">
+  {{ range $feature_row }}
+    <div class="feature-item">
+      {{ if .image_path }}
+      <div class="feature-image">
+        <img src="{{ .image_path }}" alt="{{ .title }}" loading="lazy">
+      </div>
+      {{ end }}
+      <div class="feature-content">
+        {{ if .title }}
+        <h3 class="feature-title">{{ .title }}</h3>
+        {{ end }}
+        {{ if .excerpt }}
+        <div class="feature-excerpt">
+          {{ .excerpt | markdownify }}
+        </div>
+        {{ end }}
+        {{ if .url }}
+        <div class="feature-action">
+          <a href="{{ .url }}" class="feature-link">
+            {{ .btn_label | default "詳細を見る" }}
+          </a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ else }}
+<!-- feature_rowデータが見つかりません -->
+{{ end }}
