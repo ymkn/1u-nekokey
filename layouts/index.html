@@ -1,5 +1,12 @@
 {{ define "main" }}
 <div class="home-content">
+    <!-- サイト説明文 -->
+    {{ if .Content }}
+    <section class="site-description">
+        {{ .Content }}
+    </section>
+    {{ end }}
+    
     <!-- 最新ニュース3件 -->
     <section class="latest-news">
         <h2>最新ニュース</h2>
@@ -20,9 +27,9 @@
 
     <!-- 製品一覧 -->
     <section class="products-section">
-        <h2>製品一覧</h2>
+        <h2>頒布中の製品一覧</h2>
         <div class="products-grid">
-            {{ range (where .Site.RegularPages "Section" "products").ByDate.Reverse }}
+            {{ range (where (where .Site.RegularPages "Section" "products") ".Params.discontinued" "ne" true).ByDate.Reverse }}
             <div class="product-card">
                 <a href="{{ .RelPermalink }}">
                     {{ if .Params.image }}
@@ -42,6 +49,9 @@
                 </a>
             </div>
             {{ end }}
+        </div>
+        <div class="products-more">
+            <a href="./products/" class="more-link">終売品も含めたすべての製品を見る →</a>
         </div>
     </section>
 </div>

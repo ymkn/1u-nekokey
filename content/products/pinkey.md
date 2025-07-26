@@ -4,6 +4,7 @@ description: "圧縮60%キーボード"
 date: 2024-02-02
 image: /1u-nekokey/images/products/pinkey/pinkey-01.jpg
 draft: false
+discontinued: true
 ---
 
 ![PinKey製品画像](/1u-nekokey/images/products/pinkey/pinkey-01.jpg)

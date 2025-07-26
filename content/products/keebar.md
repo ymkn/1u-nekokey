@@ -4,6 +4,7 @@ description: "中央テンキー横長40%キーボード"
 date: 2023-12-17
 image: /1u-nekokey/images/products/keebar/keebar-01.jpg
 draft: false
+discontinued: true
 ---
 
 ![KeeBar製品画像](/1u-nekokey/images/products/keebar/keebar-01.jpg)

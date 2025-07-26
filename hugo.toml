@@ -6,7 +6,6 @@ theme = 'PaperMod'
 # PaperMod theme settings
 [params]
   env = "production"
-  description = "1Uキーボード専門店 - 高品質なカスタムキーボードを提供"
   author = "1U猫キー屋"
   defaultTheme = "light"
   disableThemeToggle = true
@@ -32,6 +31,7 @@ theme = 'PaperMod'
 
   [params.label]
     text = "1U猫キー屋"
+    subtitle = "ymknが作成したキーボードの製品情報"
     icon = "/1u-nekokey/images/logo/logo.png"
     iconHeight = 35
 

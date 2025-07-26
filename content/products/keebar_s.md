@@ -4,6 +4,7 @@ description: "中央テンキー横長キーボード"
 date: 2024-02-02
 image: /1u-nekokey/images/products/keebar_s/keebar_s-01.jpg
 draft: false
+discontinued: true
 ---
 
 ![KeeBar S製品画像](/1u-nekokey/images/products/keebar_s/keebar_s-01.jpg)

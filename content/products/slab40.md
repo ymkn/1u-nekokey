@@ -1,9 +1,10 @@
 ---
-title: "Slab40"
+title: "Slab40 (discontinued)"
 description: "12列ロースタッガード40%キーボード"
 date: 2024-09-01
 image: /1u-nekokey/images/products/slab40/slab40-01.jpg
 draft: false
+discontinued: true
 ---
 
 ![Slab40製品画像](/1u-nekokey/images/products/slab40/slab40-01.jpg)

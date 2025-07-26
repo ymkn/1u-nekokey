@@ -79,11 +79,11 @@ header li a {
 }
 
 body {
-    background-color: #ead6bb !important;
+    background-color: #f9f7f3  !important;
 }
 
 .main {
-    background-color: #ead6bb !important;
+    background-color: #f9f7f3  !important;
 }
 
 /* ヘッダーの背景色も調整 */
@@ -334,7 +334,7 @@ main table th {
 
 /* Go To Topボタンのスタイル */
 .top-link {
-    background-color: white !important;
+    background-color: #fafafa !important;
     color: #333 !important;
     border: 1px solid #bbab96 !important;
 }
@@ -422,6 +422,11 @@ main table th {
 
 .more-link:hover {
     text-decoration: underline;
+}
+
+.products-more {
+    margin-top: 1.5rem;
+    text-align: right;
 }
 
 /* 製品カードグリッドのスタイル */
