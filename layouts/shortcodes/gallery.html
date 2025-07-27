@@ -8,11 +8,10 @@
 <div class="gallery gallery-{{ $layout }}" id="gallery-{{ $layout }}">
   {{ range $index, $item := $gallery }}
     <div class="gallery-item">
-      <a href="{{ $item.url }}" 
-         data-pswp-width="1200" 
-         data-pswp-height="800"
+      <a href="{{ $item.url }}?v={{ now.Unix }}" 
+         data-pswp-src="{{ $item.url }}?v={{ now.Unix }}"
          target="_blank">
-        <img src="{{ $item.image_path }}" alt="製品画像 {{ add $index 1 }}" loading="lazy" class="gallery-thumb">
+        <img src="{{ $item.image_path }}?v={{ now.Unix }}" alt="製品画像 {{ add $index 1 }}" loading="lazy" class="gallery-thumb">
       </a>
     </div>
   {{ end }}
@@ -22,28 +21,102 @@
 <script type="module">
 import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe-lightbox.esm.js';
 
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery-{{ $layout }}',
-  children: 'a',
-  pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe.esm.js'),
+// 画像サイズを事前取得してHTML属性に設定
+async function preloadGalleryImages(galleryElement) {
+  const links = galleryElement.querySelectorAll('a');
   
-  // UI設定
-  closeTitle: '閉じる',
-  zoomTitle: 'ズーム',
-  arrowPrevTitle: '前の画像',
-  arrowNextTitle: '次の画像',
+  const promises = Array.from(links).map((link) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      const src = link.getAttribute('data-pswp-src') || link.href;
+      
+      img.onload = () => {
+        // HTML要素に実際の画像サイズを設定
+        link.setAttribute('data-pswp-width', img.naturalWidth);
+        link.setAttribute('data-pswp-height', img.naturalHeight);
+        resolve();
+      };
+      
+      img.onerror = () => {
+        // エラー時はデフォルト正方形
+        link.setAttribute('data-pswp-width', '1000');
+        link.setAttribute('data-pswp-height', '1000');
+        resolve();
+      };
+      
+      img.src = src;
+    });
+  });
   
-  // アニメーション設定
-  showAnimationDuration: 300,
-  hideAnimationDuration: 300,
-  
-  // その他の設定
-  spacing: 0.1,
-  allowPanToNext: true,
-  wheelToZoom: true
-});
+  return Promise.all(promises);
+}
 
-lightbox.init();
+// PhotoSwipe初期化
+async function initPhotoSwipe() {
+  const galleryElement = document.getElementById('gallery-{{ $layout }}');
+  
+  if (!galleryElement) return;
+  
+  // 画像サイズを事前取得
+  await preloadGalleryImages(galleryElement);
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery-{{ $layout }}',
+    children: 'a',
+    pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/photoswipe.esm.js'),
+    
+    // UI設定
+    closeTitle: '閉じる',
+    zoomTitle: 'ズーム',
+    arrowPrevTitle: '前の画像',
+    arrowNextTitle: '次の画像',
+    
+    // アニメーション設定
+    showAnimationDuration: 300,
+    hideAnimationDuration: 300,
+    
+    // 表示設定
+    spacing: 0.12,
+    allowPanToNext: false,
+    wheelToZoom: true,
+    
+    // アスペクト比を維持する重要な設定
+    initialZoomLevel: 'fit',
+    secondaryZoomLevel: 1.5,
+    maxZoomLevel: 3,
+    
+    // 背景設定
+    bgOpacity: 1
+  });
+
+  // キャプション表示の処理
+  lightbox.on('uiRegister', () => {
+    lightbox.pswp.ui.registerElement({
+      name: 'custom-caption',
+      appendTo: 'root',
+      onInit: (el, pswp) => {
+        lightbox.pswp.on('change', () => {
+          const currSlideElement = lightbox.pswp.currSlide?.data.element;
+          let captionText = '';
+          if (currSlideElement) {
+            const img = currSlideElement.querySelector('img');
+            captionText = img?.alt || '';
+          }
+          el.innerHTML = captionText;
+        });
+      }
+    });
+  });
+
+  lightbox.init();
+}
+
+// DOM読み込み完了後に初期化
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPhotoSwipe);
+} else {
+  initPhotoSwipe();
+}
 </script>
 {{ else }}
 <!-- ギャラリーデータが見つかりません -->

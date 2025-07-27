@@ -75,3 +75,21 @@ theme = 'PaperMod'
 # Outputs for search and RSS
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+# Cache control for images
+[caches]
+  [caches.images]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+  [caches.assets]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+
+# Server settings for development
+[server]
+  [[server.headers]]
+    for = "/images/**"
+    [server.headers.values]
+      Cache-Control = "no-cache, no-store, must-revalidate"
+      Pragma = "no-cache"
+      Expires = "0"
