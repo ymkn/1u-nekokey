@@ -28,6 +28,10 @@ gallery:
 
 ![neigeレイアウト](/1u-nekokey/images/products/neige/neige-layout.png)
 
+## タイピング動画
+
+{{< youtube "iPPMH4KKArY" >}}
+
 ## 購入
 
 {{< button url="https://ymkn.booth.pm/items/7146852" text="BOOTH 商品ページへ" >}}
