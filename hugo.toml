@@ -2,6 +2,7 @@ baseURL = 'https://ymkn.github.io/1u-nekokey/'
 languageCode = 'ja'
 title = '1U猫キー屋'
 theme = 'PaperMod'
+timeZone = "Asia/Tokyo"
 
 # PaperMod theme settings
 [params]
