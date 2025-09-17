@@ -34,7 +34,7 @@ timeZone = "Asia/Tokyo"
 
   [params.label]
     text = "1U猫キー屋"
-    subtitle = "ymknが作成したキーボードの製品情報"
+    subtitle = "ymkn作キーボードの製品情報"
     icon = "/1u-nekokey/images/logo/logo.png"
     iconHeight = 35
 
