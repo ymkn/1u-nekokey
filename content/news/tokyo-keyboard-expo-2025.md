@@ -1,6 +1,6 @@
 ---
 title: "TOKYO KEYBOARD EXPO 2025出展情報"
-date: 2025-09-14
+date: 2025-09-22
 draft: false
 ---
 
@@ -12,7 +12,13 @@ draft: false
 
 新作の[neige](/1u-nekokey/products/neige/)と、[Henge40](/1u-nekokey/products/henge40/)を展示します。
 
-少量ですが販売も行います。特にHenge40は**大幅割引**価格。
+少量ですが販売も行います。
+
+- neige アルミ（アルミ基本セット＋カバー） 27,000円
+- neige 白（白樹脂基本セット） 15,000円
+- Henge40 'Henge'ケース 30,000円
+- Henge40 Flatケース（金） 25,000円
+- YM60JIS （はんだ済み基板） 8,000円
 
 ## お支払方法
 
