@@ -38,6 +38,8 @@ gallery:
 
 ## 仕様
 
+![neigeスペック](/1u-nekokey/images/products/neige/keyspec-badge-neige.png)
+
 | 項目 | 内容 |
 |---|---|
 |名称|neige (ネージュ)|

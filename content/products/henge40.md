@@ -54,6 +54,8 @@ feature_row:
 
 ## 仕様
 
+![hengeスペック](/1u-nekokey/images/products/henge40/keyspec-badge-henge.png)
+
 | 項目 | 内容 |
 |---|---|
 |名称|Henge40 (ヘンジ40)|

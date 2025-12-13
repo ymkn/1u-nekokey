@@ -30,6 +30,8 @@ draft: false
 
 ## 仕様
 
+![ym60aスペック](/1u-nekokey/images/products/ym60a/keyspec-badge-ym60a.png)
+
 | 項目 | 内容 |
 |---|---|
 |対応ケース|GH60互換の60%サイズケース|

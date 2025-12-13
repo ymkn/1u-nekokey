@@ -34,6 +34,8 @@ draft: false
 
 ## 仕様
 
+![ym60jisスペック](/1u-nekokey/images/products/ym60jis/keyspec-badge-ym60jis.png)
+
 | 項目 | 内容 |
 |---|---|
 |対応ケース|GH60互換の60%サイズケース|
