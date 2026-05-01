@@ -1,8 +1,8 @@
 ---
 title: "neige"
 description: "ロースタッガード3行30%キーボード"
-date: 2025-07-26
-image: /1u-nekokey/images/products/neige/neige-01.jpg
+date: 2026-05-01
+image: /1u-nekokey/images/products/neige/neige-05.png
 draft: false
 gallery:
   - url: /1u-nekokey/images/products/neige/neige-04.jpg
@@ -13,7 +13,7 @@ gallery:
     image_path: /1u-nekokey/images/products/neige/neige-03-th.jpg
 ---
 
-![neige製品画像](/1u-nekokey/images/products/neige/neige-01.jpg)
+![neige製品画像](/1u-nekokey/images/products/neige/neige-05.png)
 
 {{< gallery layout="third" >}}
 
