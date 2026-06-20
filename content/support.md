@@ -1,6 +1,6 @@
 ---
 title: "1U猫キー屋 サポートポリシー"
-date: 2025-09-16
+date: 2026-06-20
 draft: false
 ---
 ## 1. サポートの範囲と期間
@@ -37,7 +37,6 @@ draft: false
 お問い合わせは以下の方法で受け付けています。3日以内には返信いたします。
 
 - [BOOTH 1U猫キー屋](https://ymkn.booth.pm/) メッセージ欄
-- [@ymkn_gbf](https://x.com/ymkn_gbf) のX (Twitter) DM (BOOTH以外でご購入の場合など)
 
 お問い合わせの際は下記情報をご提示ください。
 
