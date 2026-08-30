@@ -4,6 +4,7 @@ description: "60%ケース互換の日本語レイアウトキーボード基板
 date: 2024-02-02
 image: /1u-nekokey/images/products/ym60jis/ym60jis-01.jpg
 draft: false
+discontinued: true
 ---
 
 ![YM60JIS製品画像](/1u-nekokey/images/products/ym60jis/ym60jis-01.jpg)
