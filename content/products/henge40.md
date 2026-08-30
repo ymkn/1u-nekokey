@@ -4,6 +4,7 @@ description: "12列/12.75uロースタッガード40%アルミケースキーボ
 date: 2025-03-21
 image: /1u-nekokey/images/products/henge40/henge40-01.jpg
 draft: false
+discontinued: true
 gallery:
   - url: /1u-nekokey/images/products/henge40/henge40-04.jpg
     image_path: /1u-nekokey/images/products/henge40/henge40-04-th.jpg
