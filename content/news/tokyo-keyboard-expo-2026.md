@@ -1,12 +1,12 @@
 ---
 title: "TOKYO KEYBOARD EXPO 2026出展情報"
-date: 2026-09-13
+date: 2026-09-15
 draft: false
 ---
 
 2026/9/23開催の[TOKYO KEYBORD EXPO 2026](https://tkx.yushakobo.jp/tkx2026/)にD-21「1U猫キー屋」で出展します！　当サークルは展示及び販売を行います。
 
-<!-- ![配置図]() -->
+![フロアマップ](/1u-nekokey/images/events/tokyo-keyboard-expo-2026/floormap.jpg)
 
 ## お品書き
 
