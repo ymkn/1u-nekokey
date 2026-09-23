@@ -1,5 +1,5 @@
 ---
-title: "Henge40"
+title: "Henge40 (discontinued)"
 description: "12列/12.75uロースタッガード40%アルミケースキーボード"
 date: 2025-03-21
 image: /1u-nekokey/images/products/henge40/henge40-01.jpg
